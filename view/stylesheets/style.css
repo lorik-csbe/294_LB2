@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+:invalid {
+    background-color: red;
+    transition: background-color 0.5s ease;
+    color: white;
+}
+
+:valid {
+    background-color: green;
+    transition: background-color 0.5s ease;
+    color: black;
+}
+
+.nav a,
+#login,
+#logout {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 4px 10px;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.nav a:hover,
+#login:hover,
+#logout:hover {
+    background-color: #333333;
+    cursor: pointer;
+}
+
+.user-menu {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#user-symbol {
+    width: 40px;
+    height: 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+}
+
+#logged-in {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Willkommensgruss {
+    color: #000000;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.Hinweis {
+    color: #000000;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+
+}
+
+#login-button {
+    background-color: #000000;
+    padding: 20px 30px;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#login-button:hover {
+    background-color: #333333;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+
+}
+
+.Login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    height: 50vh;
+    width: 50vh;
+    margin: 20px 20px;
+}
