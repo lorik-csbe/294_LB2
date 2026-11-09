@@ -7,7 +7,7 @@
         <div class="main-products">
             <h1>ALLE PRODUKTE</h1>
 
-            <img src="view/images/add-symbol.png" class="add-symbol"height="40px" width="40px">
+            <img src="view/images/add-symbol.png" class="add-symbol" id="add-symbol" height="40px" width="40px">
         </div>
 
         <div class="product-list" id="product-container">

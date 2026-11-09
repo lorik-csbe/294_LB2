@@ -33,8 +33,20 @@ class ProductsController {
         
     }
 
+    createProductButton() {
+        const createProductButton = document.getElementById("add-symbol");
+
+        if (createProductButton) {
+            createProductButton.addEventListener("click", () => {
+                window.location.href = "/create-product.php";
+            });
+        }
+    }
+
 
 }
 
 const controller = new ProductsController();
+
+controller.createProductButton();
 controller.productLoading();
