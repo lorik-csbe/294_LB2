@@ -12,13 +12,21 @@
     </header>
 
     <main>
-        <section id="logged-in">
+        <section class="logged-in" id="logged-out-site">
             <h1 class="Willkommensgruss">Willkommen im Shop</h1>
 
             <h2 class="Hinweis">Hinweis: Bitte melden Sie sich an</h2>
 
             <button href="/login.php" id="login-button">Login</button>
         </section>
+
+        <section id="logged-in-site">
+
+
+
+
+        </section>
+
     </main>
 
     <footer>

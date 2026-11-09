@@ -1,7 +1,5 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -25,15 +23,15 @@ header {
     margin-left: 20px;
 }
 
-:invalid {
-    background-color: red;
-    transition: background-color 0.5s ease;
+#usernameInput:invalid {
+    border: 3px solid red;
+    transition: border 0.5s ease;
     color: white;
 }
 
-:valid {
-    background-color: green;
-    transition: background-color 0.5s ease;
+#passwordInput:valid {
+    border: 3px solid green;
+    transition: border 0.5s ease;
     color: black;
 }
 
@@ -70,10 +68,12 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    height: auto;
 }
 
-#logged-in {
+.logged-in {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -129,4 +129,118 @@ footer {
     height: 50vh;
     width: 50vh;
     margin: 20px 20px;
+}
+
+.main-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.Login-container {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.Login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.Login-container input {
+    width: 220px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.Login-container input:invalid {
+    border: 3px solid red;
+    transition: background-color 0.5s ease;
+    color: white;
+}
+
+.Login-container input:valid {
+    border: 3px solid green;
+    transition: background-color 0.5s ease;
+    color: white;
+}
+
+
+
+#Anmelden-button {
+    background-color: #90EE90;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Anmelden-button:hover {
+    background-color: #7dd87d;
+}
+
+.main-products {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 60vh);
+    gap: 20px;
+    padding: 10px;
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff2f;
+    border: 1px solid #ababab;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+    gap: 5px;
+    height: auto;
+}
+
+
+
+.product-card .product-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.product-card .product-name {
+    color: #000000;
+    font-size: 16px;
+    margin-left: 5px;
+    
+}
+
+.product-card .product-price {
+    color: #000000;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.product-card .product-stock {
+    color: #000000;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }

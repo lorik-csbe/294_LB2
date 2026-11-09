@@ -4,7 +4,7 @@
         <?php require "view/blocks/header.php"; ?> 
     </header>
 
-    <main>
+    <main class="main-login">
         <div class="Login-container">
             <form onsubmit="LoginController.onSubmit(event)">
 

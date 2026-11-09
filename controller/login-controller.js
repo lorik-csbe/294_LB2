@@ -8,7 +8,7 @@ class LoginController {
         const passwordInput = document.getElementById("passwordInput").value;
 
 
-        fetch ("https://campus.csbe.ch/uek294/api/v1/authenticate", {
+        fetch (AuthController.API_URL + "/authenticate", {
 
 
             credentials: "include",

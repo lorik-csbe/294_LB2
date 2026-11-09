@@ -7,6 +7,7 @@
     <script defer src="controller/auth-controller.js"></script>
     <script defer src="controller/header-controller.js"></script>
     <script defer src="controller/login-controller.js"></script>
+    <script defer src="controller/products-controller.js"></script>
     <link href="CROS/cros.php">
 
 </head>
