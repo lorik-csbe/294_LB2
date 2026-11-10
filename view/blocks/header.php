@@ -9,6 +9,7 @@
     <script defer src="controller/login-controller.js"></script>
     <script defer src="controller/products-controller.js"></script>
     <script defer src="controller/create-product-controller.js"></script>
+    <script defer src="controller/product-detail-controller.js"></script>
     <link href="CROS/cros.php">
 
 </head>

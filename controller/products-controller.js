@@ -17,13 +17,15 @@ class ProductsController {
 
             data.forEach(product => {
                 container.innerHTML +=
-                `<div class="product-card">
+                `<div class="product-card" data-sku="${product.sku}">
                     <img src="${product.image}" alt="product-image" class="product-image">
                     <h2 class="product-name">${product.name}</h2>
                     <p class="product-price">CHF ${product.price}</p>
                     <p class="product-stock">Lagerbestand: ${product.stock}</p>
                 </div>`;
             })
+
+            this.productSelection();
         })
         
         .catch((error) => {
@@ -43,10 +45,27 @@ class ProductsController {
         }
     }
 
+    productSelection() {
+        Array.from(document.getElementsByClassName("product-card")).forEach(card => {
+            card.addEventListener("click", (e) => {
+                e.preventDefault();
+
+                const sku = card.getAttribute("data-sku");
+
+                console.log("Produkt-SKU:", sku);
+                window.location.href = `/product-detail.php?sku=${sku}`;
+            });
+        });
+    }
+
 
 }
+
+
+
 
 const controller = new ProductsController();
 
 controller.createProductButton();
 controller.productLoading();
+controller.productSelection();
