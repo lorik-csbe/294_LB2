@@ -19,7 +19,7 @@ class CreateProductController {
      * @returns void
      */
     editMode() {
-        const urlParams = new URLSearchParams(document.location.search);
+        const urlParams = new URLSearchParams(window.location.search);
         const sku = urlParams.get("sku");
 
         // sku validation 

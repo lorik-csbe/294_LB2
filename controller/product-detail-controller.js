@@ -11,7 +11,7 @@ class ProductDetailController {
      * @returns void
      */
     loadProductDetails() {
-        const params = new URLSearchParams(document.location.search);
+        const params = new URLSearchParams(window.location.search);
         const sku = params.get("sku"); // gets the SKU from the URL query string
 
         // fetches the product details for the specific SKU
@@ -34,12 +34,16 @@ class ProductDetailController {
             <img src="/view/images/bearbeiten.png" alt="edit-product" id="edit-product" class="edit-product">
             
             <img src="${data.image}" alt="${data.name}" class="product-image">
-            <h2 class="product-name">${data.name}</h2>
-            <p class="product-category">Kategorie ID: ${data.id_category}</p>
-            <p class="product-price">Preis: CHF ${data.price}</p>
-            <p class="product-stock">Lagerbestand: ${data.stock}</p>
-            <p class="product-active">Aktiv: ${data.active}</p>
+            <div class="product-info">
+                <h2 class="product-name">${data.name}</h2>
+                <p class="product-stock">Lagerbestand: ${data.stock}</p>
+                <p class="product-active">Aktiv: ${data.active}</p>
+                <p class="product-category">Kategorie ID: ${data.id_category}</p>
+                <p class="product-price">Preis: CHF ${data.price}</p>
+            </div>
+
             <label>Description:</label>
+
             <div class="product-description">${data.description}</div>`;
 
             // initializes action button event listeners after elements are rendered
@@ -93,7 +97,7 @@ class ProductDetailController {
         const editButton = document.getElementById("edit-product");
         
         editButton.addEventListener("click", () => {
-            const params = new URLSearchParams(document.location.search);
+            const params = new URLSearchParams(window.location.search);
             const sku = params.get("sku");
 
             // redirects to the form page for editing
