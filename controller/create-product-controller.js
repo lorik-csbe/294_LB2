@@ -106,6 +106,14 @@ class CreateProductController {
         });
     }
 
+    cancel() {
+        document.getElementById("back-button").addEventListener("click", () => {
+            window.location.href = "/products.php";
+        });
+    }
+
 }
 
 const createProductController = new CreateProductController();
+
+createProductController.cancel();

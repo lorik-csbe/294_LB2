@@ -302,3 +302,31 @@ footer {
     width: 30px;
     cursor: pointer;
 }
+
+.form-create {
+    display: flex;
+    width: 700px;
+    background-color: #333333;
+    padding: 30px;
+    border-radius: 40px;
+    min-height: 190px;
+}
+
+.form-create form {
+    grid-template-columns: auto;
+}
+
+.form-create form input {
+    padding: 10px;
+    border-radius: 15px;
+    display: block;
+    border: 3px solid #868686;
+}
+
+#save-Button {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #7dd87d;
+    border-radius: 15px;
+}
