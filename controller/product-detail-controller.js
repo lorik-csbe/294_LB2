@@ -14,6 +14,8 @@ class ProductDetailController {
         const params = new URLSearchParams(window.location.search);
         const sku = params.get("sku"); // gets the SKU from the URL query string
 
+        if (!sku) return;
+
         // fetches the product details for the specific SKU
         fetch(AuthController.API_URL + `/product/${sku}`, {
             credentials: "include",

@@ -28,6 +28,8 @@ class ProductsController {
         .then(data => {
             const container = document.getElementById("product-container");
 
+            if (!container) return;
+
             // loops through all products and appends their HTML markup
             data.forEach(product => {
                 container.innerHTML +=

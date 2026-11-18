@@ -3,6 +3,8 @@ class CategoryDetailController {
         const urlParams = new URLSearchParams(window.location.search);
         const categoryId = urlParams.get("category-ID");
 
+        if (!categoryId) return;
+
         fetch(AuthController.API_URL + `/category/${categoryId}`, {
             credentials: "include",
             method: "GET"

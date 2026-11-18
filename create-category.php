@@ -11,14 +11,14 @@
         <h1>PRODUKT HINZUFÜGEN</h1>
 
         <div class="form-create-category">
-            <form onsubmit="">
-                <input type="text" placeholder="Name" required>
-                <input type="number" placeholder="active" required minlength="0" maxlength="1">
+            <form id="category-form">
+                <input type="text" placeholder="Name" id="category-name" required>
+                <input type="number" placeholder="active" id="category-active" required minlength="0" maxlength="1">
                 <button id="save-Button-category">Speichern</button>
             </form>
         </div>
 
-        <button id="back-button">ABBRECHEN</button>
+        <button id="back-button-category">ABBRECHEN</button>
     </main>
 
 

@@ -1,11 +1,20 @@
 class IndexController {
     loginButton() {
-        document.getElementById("login-button").addEventListener ("click", () => {
+        const loginBtn = document.getElementById("login-button");
+        
+        if (!loginBtn) return;
+
+        loginBtn.addEventListener ("click", () => {
             window.location.href = "/login.php";
         })
     }
 
     loadCategory() {
+        const loggedOutSite = document.getElementById("logged-out-site");
+        const loggedInSite = document.getElementById("logged-in-site");
+
+        if (!loggedOutSite || !loggedInSite) return;
+
         fetch(AuthController.API_URL + "/categories", {
             credentials: "include",
             method: "GET",
@@ -20,6 +29,8 @@ class IndexController {
         })
         .then((data) => {
             const categoryList = document.getElementById("categoryContainerHome");
+
+            if (!categoryList) return;
 
             data.forEach(category => {
 
@@ -108,7 +119,11 @@ class IndexController {
     }
 
     createCategory() {
-        document.getElementById("create-category-btn").addEventListener("click", () => {
+        const btn = document.getElementById("create-category-btn");
+        
+        if (!btn) return;
+
+        btn.addEventListener("click", () => {
             window.location.href = "/create-category.php"
 
         })
