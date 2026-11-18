@@ -1,11 +1,7 @@
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
-    <script defer src="controller/index-controller.js"></script>
-    <link rel="stylesheet" href="view/stylesheets/style.css">
+    <?php require "view/blocks/head.php"?>
 </head>
+
 <body>
     <header>
         <?php require "view/blocks/header.php"; ?>
@@ -17,14 +13,23 @@
 
             <h2 class="Hinweis">Hinweis: Bitte melden Sie sich an</h2>
 
-            <button href="/login.php" id="login-button">Login</button>
+            <button id="login-button">Login</button>
         </section>
 
-        <section id="logged-in-site">
+        <section id="logged-in-site" style="display: none;">
 
+            <div class="categories-container">
+                <h2>Kategorien</h2>
 
+                <img src="view/images/add-symbol.png" width="15px" height="15px" id="create-category-btn">
+                <div class="categoryContainerHome" id="categoryContainerHome">
 
+                </div>
+            </div>
 
+            <div class="WelcomeSign">
+                <h1>Willkommen im Shop</h1>
+            </div>
         </section>
 
     </main>

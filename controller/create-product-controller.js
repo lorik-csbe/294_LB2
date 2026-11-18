@@ -107,9 +107,14 @@ class CreateProductController {
     }
 
     cancel() {
-        document.getElementById("back-button").addEventListener("click", () => {
-            window.location.href = "/products.php";
-        });
+        const cancelBtn = document.getElementById("back-button")
+        
+        if (cancelBtn) {
+            cancelBtn.addEventListener("click", () => {
+                window.location.href = "/products.php";
+            });
+        }
+
     }
 
 }

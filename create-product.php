@@ -1,3 +1,7 @@
+<head>
+    <?php require "view/blocks/head.php"?>
+</head>
+
 <body>
     <header>
         <?php require "view/blocks/header.php"; ?>
