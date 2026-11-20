@@ -8,7 +8,7 @@
     </header>
 
     <main>
-        <h1>PRODUKT HINZUFÜGEN</h1>
+        <h1>KATEGORIE HINZUFÜGEN</h1>
 
         <div class="form-create-category">
             <form id="category-form">

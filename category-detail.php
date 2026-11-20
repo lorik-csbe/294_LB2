@@ -18,6 +18,7 @@
 
         <button id="backToHome">Zurück</button>
 
+    </main>
     <footer>
         <?php require "view/blocks/footer.php"; ?>
     </footer>

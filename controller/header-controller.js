@@ -89,20 +89,3 @@ const headerController = new HeaderController();
 
 headerController.updateHeader();
 headerController.onClickLogout();
-
-/* function loggedIn() {
-
-    console.log("Funktion läuft");
-
-    if (AuthController.isTokenValid(token) === true) {
-        $("#login").hide();
-        $("#logout").show();
-        $("#user-symbol").show();
-    } else {
-        $("#login").show();
-        $("#logout").hide();
-        $("#user-symbol").hide();
-    }
-}
-
-loggedIn(); */
