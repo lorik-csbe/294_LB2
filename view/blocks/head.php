@@ -12,5 +12,5 @@
     <script defer src="controller/product-detail-controller.js"></script>
     <script defer src="controller/category-detail-controller.js"></script>
     <script defer src="controller/create-category-controller.js"></script>
-    <link href="CROS/cros.php">
+    <link href="CORS/cors.php">
 </head>

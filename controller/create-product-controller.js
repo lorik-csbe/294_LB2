@@ -90,9 +90,7 @@ class CreateProductController {
         fetch(AuthController.API_URL + `/product/${sku}`, {
             method: "PUT",
             credentials: "include",
-            headers: {
-                "Content-Type": "application/json",
-            },
+
 
             body: JSON.stringify(productData),
 
